@@ -24,7 +24,17 @@ main{
 .portada__img{
     width: 1000px;
     height: 200px;
-    
+    animation-name: imgAnimacion;
+    animation-duration:2s;
+    animation-iteration-count: unset;
+    animation-delay: 0s;    
+    animation-timing-function: ease-in;
+    border-radius: 10px;
+}
+@keyframes imgAnimacion{
+    0%{opacity: 0%;}
+    50%{opacity: 50%;}
+    100%{opacity: 100%;}
 }
 header{
     background-color: rgb(247, 210, 0);
@@ -123,6 +133,12 @@ li {
 a{
     color:rgb(54, 49, 49);
     text-decoration: none;
+    font-size: 20px;
+    transition: font-size 0,9s;
+
+}
+a:hover{
+   font-size: 25px;
 }
 .nosotros{
     padding: 10px;
